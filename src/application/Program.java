@@ -14,9 +14,11 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		try {
 			System.out.println("Enter account data");
+			
 			System.out.print("Number: ");
 			Integer number = sc.nextInt();
 			sc.nextLine();
+			
 			System.out.print("Holder: ");
 			String holder = sc.nextLine();
 			
@@ -32,7 +34,7 @@ public class Program {
 			System.out.print("Enter amount for withdraw: ");
 			acc.withdraw(sc.nextDouble());
 			
-			System.out.println("New balance: " + acc.getBalance());
+			System.out.println("New balance: " + String.format("%.2f", acc.getBalance()));
 		}
 		catch(DomainException e) {
 			System.out.println(e.getMessage());
@@ -41,7 +43,9 @@ public class Program {
 			System.out.println("Error! Incorrect data type!");
 			main(args);
 		}
-		
+		finally {
+			System.out.println("End of application!");
+		}
 		sc.close();
 	}
 
