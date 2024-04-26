@@ -41,7 +41,6 @@ public class Program {
 		}
 		catch(InputMismatchException e){
 			System.out.println("Error! Incorrect data type!");
-			main(args);
 		}
 		finally {
 			System.out.println("End of application!");

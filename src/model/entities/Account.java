@@ -8,10 +8,6 @@ public class Account {
 	private Double balance;
 	private Double withdrawLimit;
 	
-	public Account() {
-		
-	}
-	
 	public Account(Integer number, String holder, Double balance, Double withdrawLimit) {
 		this.number = number;
 		this.holder = holder;
@@ -37,10 +33,6 @@ public class Account {
 
 	public Double getBalance() {
 		return balance;
-	}
-
-	public void setBalance(Double balance) {
-		this.balance = balance;
 	}
 
 	public Double getWithdrawLimit() {
